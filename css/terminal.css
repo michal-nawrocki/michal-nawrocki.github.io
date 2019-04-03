@@ -79,7 +79,7 @@ html {
   .term-cont {
     font-family: 'Inconsolata', monospace;
     color: #fff;
-    padding: 0.7rem;
+    padding: 0.5rem;
   }
   .term-cmd {
     background: none;
