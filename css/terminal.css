@@ -29,7 +29,6 @@ html {
     background: #fff;
   }
 
-
   #term {
     height: 20rem;
     width: 45rem;
@@ -80,10 +79,11 @@ html {
   .term-cont {
     font-family: 'Inconsolata', monospace;
     color: #fff;
-    padding: 0.5rem;
+    padding: 0.7rem;
   }
   .term-cmd {
     background: none;
+    color: #fff;
     margin: 0;
     border: 0;
     color: inherit;

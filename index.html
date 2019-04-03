@@ -7,50 +7,56 @@
     <meta name="description" content=" Michal Nawrocki Software Engineer portfolio webpage">
     <meta name="keywords" content="Software engineer, developer, portfolio, IT, C++. Java, GitHub">
     <meta name="author" content="Michal Nawrocki">
+    <title>Michal Nawrocki</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/css/bootstrap-reboot.css">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/bootstrap.js"></script>
 
     <!-- My Stuff-->
     <link type="text/css" rel="stylesheet" href="/css/terminal.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inconsolata" />
+    <link type="text/css" rel="stylesheet" href="/css/page.css">
     <script src="js/terminal.js"></script>
-
-    <title>Michal Nawrocki</title>
     
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Michal Nawrocki</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#Main">Michal Nawrocki</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Full Page Image Header with Vertically Centered Content -->
-    <!-- Credits to github.com/onfe/terminal for the layout and idea-->
-    <header class="masthead">
+    <header id="Main" class="masthead">
         <div class="container h-100">
         <div class="cont">
             <div id="term" class="term term-ready">
@@ -66,8 +72,9 @@
               </div>
               <div class="term-cont">
                 <div class="term-line">
-                  <span class="term-prompt" style="color:#5eb9c6;">Michal</span><span class="term-prompt" style="color:#7af94f">@</span><span class="term-prompt" style="color:lightblue">Nawrocki.dev:~$ </span>
-                  <span class="term-cmd current" style="color:#7af94f">./visitor</span><br>
+                  <span class="term-prompt" style="color:#00AFD7;">Michal</span><span class="term-prompt"></span>@</span><span 
+                  class="term-prompt" style="color:#00D7AF;">Nawrocki.dev:~</span><span class="term-prompt"></span>$ </span>
+                  <span class="term-cmd current" style="color:#ffffff">./visitor</span><br>
                   <span id="consoleText" class="term-cmd current"></span><span class="term-caret">&#x2588;</span>
                 </div>
               </div>
@@ -77,7 +84,7 @@
   </header>
 
     <!-- Page Content -->
-    <section class="py-5">
+    <section class="py-5" id="About">
       <div class="container">
         <h2 class="font-weight-light">Page Content</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
@@ -91,6 +98,5 @@
       </script>, Michal Nawrocki</small>
     </div>
   </footer>
-
   </body>
 </html>

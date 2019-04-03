@@ -1,15 +1,6 @@
 /*
-
-UI Mockup of github.com/onfe/terminal
-a terminal 'emulator' written in js.
-
-for teaching shell concepts or giving examples
-eg. how to install using npm
+Credits to github.com/onfe/terminal for blinking script,
 */
-
-
-setInterval(caretToggle, 500);
-
 function caretToggle() {
   var caret = document.getElementsByClassName("term-caret")[0];
   if (caret.classList.contains('blink')) {
@@ -20,7 +11,7 @@ function caretToggle() {
 }
 
 function consoleText(words, colors) {
-  if (colors === undefined) colors = ["#7af94f"];
+  if (colors === undefined) colors = ["#ffffff"];
   var visible = true;
   var con = document.getElementById('console');
   var letterCount = 1;
@@ -52,10 +43,12 @@ function consoleText(words, colors) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
-  }, 120)
+  }, 70)
 }
 
 window.onload = function () {
-    consoleText(["Hello there! I'm Michal and welcome to my webpage. I'm a software engineer in my 3rd year at Univeristy of Birmingham. Come and have a look!", 'Made with Love.']);
+  setInterval(caretToggle, 500);
+  consoleText(["Hello there! I'm Michal and welcome to my webpage. I'm a software engineer in my 3rd year at Univeristy of Birmingham. "
+    + "Check out the projects section, where I list amazing stuff I worked on. Come and have a look!"]);
 };
 
