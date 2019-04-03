@@ -7,19 +7,11 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>
 
-
-    <style>
-        .masthead {
-      height: 100vh;
-      min-height: 500px;
-      background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    </style>
+    <!-- My Stuff-->
+    <link type="text/css" rel="stylesheet" href="/css/terminal.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inconsolata" />
+    <script src="js/terminal.js"></script>
 
     <title>Michal Nawrocki</title>
     
@@ -54,16 +46,32 @@
     </nav>
 
     <!-- Full Page Image Header with Vertically Centered Content -->
+    <!-- Credits to github.com/onfe/terminal for the layout and idea-->
     <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-            <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-            <p class="lead">A great starter layout for a landing page</p>
-          </div>
+        <div class="container h-100">
+        <div class="cont">
+            <div id="term" class="term term-ready">
+              <input class="term-input-hide" />
+              <div class="term-bar">
+                <div class="term-winctrl">
+                  <span class="term-btn" style="background-color: #ff3b30;"></span>
+                  <span class="term-btn" style="background-color: #fc0;"></span>
+                  <span class="term-btn" style="background-color: #28cd41;"></span>
+                </div>
+                <span class="term-title">Terminal</span>
+                <span class="term-bar-gh"></span>
+              </div>
+              <div class="term-cont">
+                <div class="term-line">
+                  <span class="term-prompt" style="color:#5eb9c6;">Michal</span><span class="term-prompt" style="color:#7af94f">@</span><span class="term-prompt" style="color:lightblue">Nawrocki.dev:~$ </span>
+                  <span class="term-cmd current" style="color:#7af94f">./visitor</span><br>
+                  <span id="consoleText" class="term-cmd current"></span><span class="term-caret">&#x2588;</span>
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
-    </header>
+    </div>
+  </header>
 
     <!-- Page Content -->
     <section class="py-5">
