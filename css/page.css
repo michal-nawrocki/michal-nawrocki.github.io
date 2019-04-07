@@ -9,11 +9,29 @@
 }
 
 .about .about-item {
-  max-width: 50rem;
-  padding-top: 2rem;
+  max-width: 30rem;
+  border: 1px red solid;
 }
 
 .about .about-item img {
+  max-width: 12rem;
+  border: 1px green solid;
+  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 35rem;
+}
+
+.testimonials .testimonial-item img {
   max-width: 20rem;
   -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
   box-shadow: 0px 5px 5px 0px #adb5bd;

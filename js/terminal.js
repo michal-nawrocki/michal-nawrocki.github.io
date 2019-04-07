@@ -48,7 +48,6 @@ function consoleText(words, colors) {
 
 window.onload = function () {
   setInterval(caretToggle, 500);
-  consoleText(["Hello there! I'm Michal and welcome to my webpage. I'm a software engineer in my 3rd year at Univeristy of Birmingham. "
-    + "Check out the projects section, where I list amazing stuff I worked on. Come and have a look!"]);
+  consoleText(["Hello there! I'm Michal and welcome to my webpage. I'm a software engineer in my 3rd year at Univeristy of Birmingham. Check out the projects section, where I list amazing stuff I worked on. Come and have a look!"]);
 };
 
