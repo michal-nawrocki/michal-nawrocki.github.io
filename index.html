@@ -24,52 +24,47 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/css/bootstrap-reboot.css">
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/bootstrap.bundle.js"></script>
-    <script src="/js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
 
-    <!-- My Stuff-->
+    <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="/css/terminal.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inconsolata" />
     <link type="text/css" rel="stylesheet" href="/css/page.css">
-    <script src="js/terminal.js"></script>
-    
+
   </head>
   <body>
+
     <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#Main">Michal Nawrocki</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#Main">Michal Nawrocki</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
     <header id="Main" class="masthead">
         <div class="container h-100">
-        <div class="cont">
+          <div class="cont">
             <div id="term" class="term term-ready">
               <input class="term-input-hide" />
               <div class="term-bar">
@@ -91,33 +86,54 @@
               </div>
             </div>
         </div>
-    </div>
-  </header>
+      </div>
+    </header>
     
     <!-- Testimonials -->
-  <section id="About" class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">About me</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-5">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid mb-3 " src="img/me.png" alt="">
+    <section id="About" class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">About me</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid mb-3 " src="img/me.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-7" style="margin-top:1rem">
+              <p class="font-weight-light mb-0" style="text-align:justify;">Hey there. I'm Michal (pronounciation can be hard so just call me Mike).
+                I'm a third-year Computer Science multilingual student at the University of Birmingham with a big understanding of software development,
+                graphic design, and passion for self-improvement, ready to tackle any problem and continue his self-taught programming journey.
+            </p><br>
+            <p class="font-weight-light mb-0 " style="text-align:justify;">I'm fluent in Java, C/C++, C#, Python, SQL, Haskell, HTML/CSS and JavaScript. Right now I'm trying to get a better
+              understanding of 3D graphics, networks and security. I'm a gamer, interested mostly in old 90's FPS games, retro consoles and computers (Amiga, Macintosh, IBM PC). Besides CS, I'm really into photography, cooking and running.
+                <br>
+              </p>
           </div>
         </div>
-        <div class="col-lg-7" style="margin-top:1rem">
-            <p class="font-weight-light mb-0" style="text-align:justify;">Hey there. I'm Michal (pronounciation can be hard so just call me Mike).
-              I'm a third-year Computer Science multilingual student at the University of Birmingham with a big understanding of software development,
-              graphic design, and passion for self-improvement, ready to tackle any problem and continue his self-taught programming journey.
-           </p><br>
-           <p class="font-weight-light mb-0 " style="text-align:justify;">I'm fluent in Java, C/C++, C#, Python, SQL, Haskell, HTML/CSS and JavaScript. Right now I'm trying to get a better
-             understanding of 3D graphics, networks and security. I'm a gamer, interested mostly in old 90's FPS games, retro consoles and computers (Amiga, Macintosh, IBM PC). Besides CS, I'm really into photography, cooking and running.
-              <br>
-            </p>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Portfolio -->
+    <section id="Portfolio" class="testimonials text-center bg-light">
+        <div class="container">
+          <h2 class="mb-5">Portfolio</h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tortor leo, dapibus at dictum consequat, consectetur vel nibh. Cras quis dolor quis arcu luctus mollis eu volutpat nisi. Etiam et imperdiet urna. Mauris non massa a lectus consectetur tempus in non ex. Vivamus non quam ac odio condimentum feugiat at ultrices libero. Etiam ac lectus leo. Suspendisse velit quam, dapibus non dui quis, feugiat tempus orci. Nullam ut pharetra leo, at tempus nibh. Vivamus pellentesque ligula et placerat aliquet. Donec mattis velit mi. Cras tristique eget orci in imperdiet. Vivamus tempus malesuada leo, eu tristique metus condimentum ut. Aliquam scelerisque tempor tortor, et mollis nunc euismod eu. Suspendisse vitae erat imperdiet, facilisis ante id, tempor felis. Ut sed fringilla metus, non porta libero.
+              Aliquam mauris neque, dictum vel tortor in, sagittis hendrerit libero. Integer convallis pretium volutpat. Phasellus id velit elementum, mollis mi ut, venenatis ex. Cras varius nulla vel sollicitudin commodo. Duis vel nisl leo. Cras nec ligula aliquet, accumsan magna at, pretium quam. Sed tristique neque ante, nec viverra odio lobortis quis.
+          </p>
+        </div>
+    </section>
+
+    <!-- Contatct -->
+    <section id="Contact" class="testimonials text-center bg-light">
+        <div class="container">
+          <h2 class="mb-5">Contact</h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tortor leo, dapibus at dictum consequat, consectetur vel nibh. Cras quis dolor quis arcu luctus mollis eu volutpat nisi. Etiam et imperdiet urna. Mauris non massa a lectus consectetur tempus in non ex. Vivamus non quam ac odio condimentum feugiat at ultrices libero. Etiam ac lectus leo. Suspendisse velit quam, dapibus non dui quis, feugiat tempus orci. Nullam ut pharetra leo, at tempus nibh. Vivamus pellentesque ligula et placerat aliquet. Donec mattis velit mi. Cras tristique eget orci in imperdiet. Vivamus tempus malesuada leo, eu tristique metus condimentum ut. Aliquam scelerisque tempor tortor, et mollis nunc euismod eu. Suspendisse vitae erat imperdiet, facilisis ante id, tempor felis. Ut sed fringilla metus, non porta libero.
+              Aliquam mauris neque, dictum vel tortor in, sagittis hendrerit libero. Integer convallis pretium volutpat. Phasellus id velit elementum, mollis mi ut, venenatis ex. Cras varius nulla vel sollicitudin commodo. Duis vel nisl leo. Cras nec ligula aliquet, accumsan magna at, pretium quam. Sed tristique neque ante, nec viverra odio lobortis quis.
+          </p>
+        </div>
+    </section>
 
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
@@ -126,5 +142,10 @@
       </script>, Michal Nawrocki</small>
     </div>
   </footer>
+
+  <!-- My Stuff-->
+  <script src="js/terminal.js"></script>
+  <script src="js/page.js"></script>
+
   </body>
 </html>
