@@ -1,6 +1,6 @@
-/*
-Credits to github.com/onfe/terminal for blinking script,
-*/
+var textTerminal = "Hello there! I'm Michal and welcome to my webpage. I'm a software engineer in my 3rd year at Univeristy of Birmingham.  C" +
+"heck out the projects section, where I list projects I worked on. My resume is available in the Contact section. Come and have a look!";
+
 function caretToggle() {
   var caret = document.getElementsByClassName("term-caret")[0];
   if (caret.classList.contains('blink')) {
@@ -33,12 +33,6 @@ function consoleText(words, colors) {
         target.setAttribute("style", "color:" + colors[0])
         letterCount += x;
       }, 1000)
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
-      waiting = true;
-      window.setTimeout(function() {
-        x = -1;
-        letterCount += x;
-      }, 1000)
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
@@ -48,6 +42,6 @@ function consoleText(words, colors) {
 
 window.onload = function () {
   setInterval(caretToggle, 500);
-  consoleText(["Hello there! I'm Michal and welcome to my webpage. I'm a software engineer in my 3rd year at Univeristy of Birmingham. Check out the projects section, where I list amazing stuff I worked on. Come and have a look!"],);
+  consoleText([textTerminal],);
 };
 
