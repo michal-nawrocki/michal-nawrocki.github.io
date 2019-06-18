@@ -43,5 +43,6 @@ function consoleText(words, colors) {
 window.onload = function () {
   setInterval(caretToggle, 500);
   consoleText([textTerminal],);
+  new WOW().init();
 };
 
