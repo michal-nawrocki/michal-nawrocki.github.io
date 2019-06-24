@@ -201,3 +201,7 @@
   transform: rotate(90deg);
   background-color: #212529;
 }
+
+.contact a{
+  color: #4F7AFF
+}
