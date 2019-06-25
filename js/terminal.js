@@ -44,5 +44,9 @@ window.onload = function () {
   setInterval(caretToggle, 500);
   consoleText([textTerminal],);
   new WOW().init();
+  
+  $('.rotate-btn').on('click', function(){
+    $('.card-rotating').toggleClass('flipped');
+  });
 };
 
