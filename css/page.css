@@ -29,6 +29,7 @@
 }
 
 .testimonials {
+  display: flow-root;
   padding-top: 7rem;
   padding-bottom: 7rem;
   padding-left: 1rem;
