@@ -1,5 +1,6 @@
-var textTerminal = "Hello there! I'm Michal and welcome to my webpage. I'm a software engineer in my final year at Univeristy of Birmingham.  C" +
-"heck out the portfolio section, where I list projects I worked on. My CV is available in the Resume section. Come and have a look!";
+var textTerminal = "Hello there! I'm Michal and welcome to my webpage."
+ + " I've recently graduated from University of Birmingham." + " I'm currently working remotely for a fintech comapny called Yobota. "
+ + "Check out the portfolio section, where I list projects I've worked on. My CV is available in the `Resume` section. Come and have a look!";
 
 function caretToggle() {
   var caret = document.getElementsByClassName("term-caret")[0];
